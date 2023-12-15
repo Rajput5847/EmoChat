@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmoChat | Chat Limitless</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="public/logo.png">
+</head>
+
+<body>
+  <div class="app">
+    <div class="screen join-screen active">
+      <div class="form">
+        <h2>Join Chat</h2>
+        <div class="form-input">
+          <label>Username</label>
+          <input placeholder="Enter Your Username" type="text" id="username">
+        </div>
+        <div class="form-input">
+          <button id="join-user">Join</button>
+        </div>
+      </div>
+    </div>
+    <div class="screen chat-screen">
+      <div class="header">
+        <div class="logo">EmoChat</div>
+        <p id="typing"></p>
+        <button id="exit-chat">Exit Chat</button>
+      </div>
+      <div class="messages">
+
+      </div>
+      <div id="typebox">
+        <input type="text" placeholder="Message Here!" id="message-input">
+        <button id="send-message"><i class="fa-regular fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="socket.io/socket.io.js"></script>
+  <script src="https://kit.fontawesome.com/8f72655bd7.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="code.js"></script>
+</body>
+
+</html>
